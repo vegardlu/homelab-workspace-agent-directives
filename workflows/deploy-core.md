@@ -1,0 +1,21 @@
+---
+description: Deploy Lundedev Core (Backend)
+---
+
+1. Navigate to the core project directory
+   - Command: `cd /Users/vegard/homelab-workspace/lundedev-core`
+
+2. Run local tests to ensure code quality
+   - Command: `./gradlew test`
+
+3. Verify git status and push changes if needed
+   - Command: `git status`
+   - If there are uncommitted changes, ask the user if they want to commit and push them.
+   - If the local branch is ahead of remote, push the changes: `git push`
+
+4. Wait for GitHub Actions build to complete
+   - Command: `gh run watch -i 10 --exit-status`
+   - Note: This waits for the latest workflow run to finish. If it fails, the workflow should stop here.
+
+5. Deploy to the server
+   - Command: `ssh lundedev "cd homelab && docker compose pull lundedev-core && docker compose up -d lundedev-core"`
