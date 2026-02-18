@@ -19,3 +19,7 @@ description: Deploy Lundedev Core (Backend)
 
 5. Deploy to the server
    - Command: `ssh lundedev "cd homelab && docker compose pull lundedev-core && docker compose up -d lundedev-core"`
+
+6. Verify Deployment
+   - Command: `ssh lundedev "docker compose ps lundedev-core"`
+   - Check that the container state is 'Up' or 'healthy'.

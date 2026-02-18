@@ -20,3 +20,7 @@ description: Deploy Lundedev Hjem (Frontend)
 
 5. Deploy to the server
    - Command: `ssh lundedev "cd homelab && docker compose pull lundedev-hjem && docker compose up -d lundedev-hjem"`
+
+6. Verify Deployment
+   - Command: `ssh lundedev "docker compose ps lundedev-hjem"`
+   - Check that the container state is 'Up' or 'healthy'.

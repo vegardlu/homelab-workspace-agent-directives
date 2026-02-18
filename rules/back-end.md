@@ -2,5 +2,8 @@
 trigger: always_on
 ---
 
-* back-end code should always be in lundedev-core. minimize logic in the front end. But I do want a interactive modern single page front end.
-* All code should be Kotlin (no Java)
+*   **Strict Separation**: 
+    *   **Backend (`lundedev-core`)**: Handles ALL business logic, data persistence, and external service integrations (Home Assistant, etc.).
+    *   **Frontend (`lundedev-hjem`)**: STRICTLY View layer. No direct database access. No complex business rules. Use Server Actions or API calls to communicate with the core.
+*   **Code Style**: All backend code must be **Kotlin**. Java is forbidden.
+*   **API Design**: Use RESTful principles or specific internal patterns as defined in `ChatController` and other existing controllers.
