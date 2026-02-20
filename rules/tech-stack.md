@@ -6,7 +6,8 @@ trigger: always_on
 
 ## Backend: `lundedev-core`
 -   **Language**: Kotlin (latest stable).
--   **Framework**: Spring Boot.
+-   **JDK 21**: Use LTS Java, 21
+-   **Framework**: Spring Boot 4.
 -   **Build Tool**: Gradle (Kotlin DSL).
 -   **Testing**: JUnit 5, MockK.
 
