@@ -1,4 +1,3 @@
-
 ---
 description: Add, commit, and push changes to the .agent repository
 ---
