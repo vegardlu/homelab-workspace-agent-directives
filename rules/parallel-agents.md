@@ -3,7 +3,7 @@
 When multiple instances of Google Antigravity (or other AI agents) are operating in parallel within this project, adhere strictly to the following best practices:
 
 ## 1. Scope Isolation & Boundaries
-- **Respect Domain Boundaries**: Never modify files outside your explicitly assigned scope. For example, if assigned to the frontend (`lundedev-hjem`), do not touch the backend (`lundedev-core`) or MCP (`lundedev-random-mcp`) unless instructed.
+- **Respect Domain Boundaries**: Never modify files outside your explicitly assigned scope. For example, if assigned to the frontend (`lundedev-hjem`), do not touch the backend (`lundedev-core`) unless instructed.
 - **No Shared File Modifications**: Avoid modifying shared configuration files (e.g., root `compose.yaml`, root `.gitignore`, global GitHub Actions workflows) unless you have confirmed no other agent is working on them.
 - **Atomic Work**: Break work down so that each agent can complete its task without waiting on or interfering with another agent's output.
 

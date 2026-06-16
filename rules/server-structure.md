@@ -59,6 +59,4 @@ vegard@vidjeveien4-server:~$ tree -L 4
     │       ├── kuma.db-wal
     │       ├── screenshots
     │       └── upload
-    ├── lundedev-random-mcp
-    │   └── compose.yaml
     └── plex
